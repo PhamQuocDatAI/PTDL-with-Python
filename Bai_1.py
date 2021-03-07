@@ -78,4 +78,3 @@ print("-" * 100)
 
 # Câu 9: Lọc các giá trị của series 1 > 15 và in ra màn hình
 print(series[1:15])
-
