@@ -12,3 +12,12 @@ print("-" * 50)
 data2 = data.sample(7)
 print(data2)
 data2.to_csv('file.csv')
+
+
+# Sử dụng hàm iloc
+import random
+
+
+for x in range(1, 8):
+    count = random.randint(1, len(data))
+    
