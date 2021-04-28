@@ -1,13 +1,22 @@
-import seaborn as sns
+import random
 
-# Apply the default theme
-sns.set_theme()
 
-# Load an example dataset
-tips = sns.load_dataset("demo2")
+sum = 10
+data = []
+while True:
+    count = int(input('Nhap count: '))
+    low = int(input('Nhap low: '))
+    high = int(input('Nhap high: '))
+    if (sum - count) > 0:
+        for x in range(count):
+            a = random.uniform(low, high)
+            data.append(a)
+    else:
+        for x in range(sum):
+            a = random.uniform(low, high)
+            data.append(a)
+    sum -= count
 
-# Create a visualization
-sns.relplot(
-    data=tips,
-    x="total_bill", y="tip", col="time",
-    hue="smoker", style="smoker", size="size",)
+print(data)
+
+  
